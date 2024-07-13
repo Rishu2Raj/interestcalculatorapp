@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mummy's Interest Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form id="interestForm">
+            <div class="header">
+                <h1>Mummy Ji Interest Calculator</h1>
+                <p>Calculate your interest easily</p>
+            </div>
+
+            <label for="loandate">Date of Loan Amount Sanction:</label>
+            <input type="date" name="loandate" id="loandate" required>
+            <br><br>
+
+            <label for="cdate">Current Date: </label>
+            <input type="date" name="cdate" id="cdate" required>
+            <br><br>
+
+            <label for="pAmount">Principal Amount: </label>
+            <input type="number" name="pAmount" id="pAmount" placeholder="10000" required>
+            <br><br>
+
+            <label for="interest-rate">Interest Rate: </label>
+            <input type="number" id="interest-rate" placeholder="10" required>
+            <br><br>
+
+            <label for="interest-type">Interest Type: </label>
+            <select name="interest-type" id="interest-type" required>
+                <option value="">Select Interest Type</option>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+            </select>
+            <br><br>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="displayResult" class="hide">
+            <div id="displayValue"></div>
+            <button id="generateButton" style="display: none;" onclick="goToInvoice()">Generate Invoice</button>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

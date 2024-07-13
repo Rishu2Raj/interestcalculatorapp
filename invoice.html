@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mummy's Interest Calculator | Invoice</title>
+    <link rel="stylesheet" href="./css/invoice.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Personal Loan Invoice Form</h1>
+        <form id="loanForm">
+            <label for="borrower">Borrower Name:</label>
+            <input type="text" id="borrower" name="borrower" required><br><br>
+
+            <label for="lender">Lender Name:</label>
+            <input type="text" id="lender" name="lender" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div>
+            <div id="agreement" class="agreement"></div>
+
+            <button id="printButton" type="button" onclick="printInvoice()" style="display: none;">Print
+                Invoice</button>
+        </div>
+    </div>
+
+    <script src="./js/invoice.js"></script>
+</body>
+
+</html>
